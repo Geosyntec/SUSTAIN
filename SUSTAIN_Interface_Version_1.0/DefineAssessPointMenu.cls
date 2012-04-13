@@ -1,0 +1,68 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+  Persistable = 0  'NotPersistable
+  DataBindingBehavior = 0  'vbNone
+  DataSourceBehavior  = 0  'vbNone
+  MTSTransactionMode  = 0  'NotAnMTSObject
+END
+Attribute VB_Name = "DefineAssessPointMenu"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+'******************************************************************************
+'   Application: SUSTAIN - Best Management Practice Decision Support System
+'   Company:     Tetra Tech, Inc
+'   Designer:    Leslie Shoemaker, Ting Dai, Khalid Alvi, Jenny Zhen, John Riverson, Sabu Paul
+'   Developer:   Haihong Yang, Sabu Paul, Mira Chokshi
+'   History:     Created:
+'                Modified: 03/29/2005 - mira chokshi added comments to project
+'
+'******************************************************************************
+
+Option Explicit
+Implements IMenuDef
+Implements IRootLevelMenu
+
+Private Property Get IMenuDef_Caption() As String
+    ' Menu caption
+    IMenuDef_Caption = "Define Assessment Point"
+End Property
+
+Private Sub IMenuDef_GetItemInfo(ByVal Pos As Long, ByVal itemDef As IItemDef)
+    ' Menu items
+    Select Case Pos
+    Case 0
+        itemDef.ID = "SUSTAIN.AssessPointCurrentScenario"      'Current Scenario
+        itemDef.Group = False
+    Case 1
+        itemDef.ID = "SUSTAIN.AssessPointMinimizeCost"         'Minimize cost
+        itemDef.Group = False
+    Case 2
+        itemDef.ID = "SUSTAIN.AssessPointTradeoffCurve"        'Draw cost benefit trade off curve
+        itemDef.Group = False
+'    Case 2
+'        itemDef.ID = "SUSTAIN.AssessPointMaximizeBenefit"      'Maximize benefit
+'        itemDef.Group = False
+'    Case 3
+'        itemDef.ID = "SUSTAIN.AssessPointTradeoffCurve"        'Draw cost benefit trade off curve
+'        itemDef.Group = False
+    End Select
+End Sub
+Private Property Get IMenuDef_ItemCount() As Long
+    ' Menu count
+    IMenuDef_ItemCount = 3 '4
+End Property
+
+Private Property Get IMenuDef_Name() As String
+    'Menu name
+    IMenuDef_Name = "SUSTAIN"
+End Property
+
+
+
+
+
+
+

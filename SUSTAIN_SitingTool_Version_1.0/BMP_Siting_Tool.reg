@@ -1,0 +1,30 @@
+REGEDIT4
+
+; This Registry Script enters CoClasses Into their appropriate Component Category
+; Use this script during installation of the components
+; 
+; It also lists all coclasses contained within the DLL
+
+
+; CoClass: BMP_Siting_Tool.AboutBMPCommand
+; CLSID: {03473773-DCD2-4B01-92F7-2A39CDC4BD23}
+; Component Category: ESRI Mx Commands
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{03473773-DCD2-4B01-92F7-2A39CDC4BD23}\Implemented Categories\{B56A7C42-83D4-11D2-A2E9-080009B6F22B}]
+
+; CoClass: BMP_Siting_Tool.BMPCommand
+; CLSID: {612660C7-1216-4BD1-9F90-B6ECF46D1656}
+; Component Category: ESRI Mx Commands
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{612660C7-1216-4BD1-9F90-B6ECF46D1656}\Implemented Categories\{B56A7C42-83D4-11D2-A2E9-080009B6F22B}]
+
+; CoClass: BMP_Siting_Tool.BMPExtension
+; CLSID: {9C74DD76-FF04-476C-9553-1DF2077C9139}
+; Component Category: ESRI Mx Extensions
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{9C74DD76-FF04-476C-9553-1DF2077C9139}\Implemented Categories\{B56A7C45-83D4-11D2-A2E9-080009B6F22B}]
+
+; CoClass: BMP_Siting_Tool.BMPobj
+; CLSID: {CACD1A6D-1707-4B75-9460-0A8F982CE5CA}
+
+; CoClass: BMP_Siting_Tool.SitingToolbar
+; CLSID: {83E22F39-9958-47D2-9814-D3C3D7D73BBE}
+; Component Category: ESRI Mx CommandBars
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{83E22F39-9958-47D2-9814-D3C3D7D73BBE}\Implemented Categories\{B56A7C4A-83D4-11D2-A2E9-080009B6F22B}]

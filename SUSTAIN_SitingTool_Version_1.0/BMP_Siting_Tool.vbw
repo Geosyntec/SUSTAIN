@@ -1,0 +1,12 @@
+SitingToolbar = 154, 203, 876, 828, Z
+ModuleSustainGlobal = 198, 261, 920, 886, 
+ErrorHandling = 22, 29, 806, 503, 
+frmBMPCriteria = 220, 290, 942, 915, , 22, 29, 744, 654, C
+BMPCommand = 88, 116, 810, 741, 
+BMPobj = 22, 29, 877, 436, 
+AboutBMPCommand = 22, 29, 807, 533, 
+FrmAbout = 0, 0, 0, 0, C, 22, 29, 744, 654, C
+frmSplash = 0, 0, 0, 0, C, 44, 58, 832, 465, C
+BMPExtension = 88, 116, 854, 590, 
+ModuleMenu = 110, 145, 876, 619, 
+ModuleRasterUtils = 154, 203, 961, 672, 

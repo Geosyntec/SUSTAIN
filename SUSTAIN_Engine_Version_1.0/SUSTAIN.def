@@ -1,0 +1,18 @@
+; SUSTAIN.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SUSTAINOPT"
+DESCRIPTION  'SUSTAINOPT Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+StartSimulation		@1
+StartLandSimulation @2
+swmm_run			@3
+swmm_open			@4
+swmm_start			@5
+swmm_step			@6
+swmm_end			@7
+swmm_report			@8
+swmm_getMassBalErr	@9
+swmm_close			@10
+swmm_getVersion		@11
